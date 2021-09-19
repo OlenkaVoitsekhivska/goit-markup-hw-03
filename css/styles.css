@@ -1,3 +1,12 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 :root {
   --blue: #2196f3;
   --white: #ffffff;
@@ -14,6 +23,25 @@ body {
   font-family: Roboto;
   font-style: normal;
   letter-spacing: 0.03em;
+
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+h1,
+h2,
+h3,
+p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav-bar{
+  outline: 1px solid tomato;
+ 
 }
 .logo-header {
   text-decoration: none;
@@ -34,6 +62,7 @@ body {
 .web {
   color: var(--blue);
 }
+
 .nav-list {
   list-style-type: none;
 }
@@ -54,6 +83,7 @@ body {
 }
 .contacts-list {
   list-style-type: none;
+  margin-bottom: 0;
 }
 .contacts-item {
   font-weight: 500;
@@ -69,6 +99,7 @@ body {
 }
 .hero-box {
   background-color: var(--hero-footer-bcg);
+  outline:tomato solid 1px;
 }
 .hero-title {
   font-weight: 900;
@@ -80,6 +111,7 @@ body {
   color: var(--hero-heading);
 }
 .button {
+  font-family: Roboto;
   background-color: var(--blue);
   font-weight: 700;
   font-size: 16px;
@@ -88,8 +120,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
 }
+.features{
+  outline: tomato solid 1px;
+}
 .features-list {
   list-style-type: none;
+  margin-bottom: 0;
 }
 .features-title {
   font-weight: 700;
@@ -112,14 +148,25 @@ body {
   text-align: center;
   color: var(--headings);
 }
+.services{
+  outline: tomato solid 1px;
+  }
+
 .services-list {
   list-style-type: none;
+  margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
 }
 .crew {
   background-color: var(--crew-bcg);
+  outline: tomato solid 1px;
 }
 .crew-list {
   list-style-type: none;
+    margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
 }
 .crew-name {
   font-weight: 500;

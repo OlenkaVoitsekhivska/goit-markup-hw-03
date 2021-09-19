@@ -23,6 +23,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   letter-spacing: 0.03em;
+  margin:0;
 
 }
 .container{
@@ -65,6 +66,8 @@ p
 
 .nav-list {
   list-style-type: none;
+  margin-top:0;
+  padding-left:0;
 }
 .nav-item {
   font-weight: 500;
@@ -84,6 +87,8 @@ p
 .contacts-list {
   list-style-type: none;
   margin-bottom: 0;
+  margin-top:0;
+  padding-left:0;
 }
 .contacts-item {
   font-weight: 500;
@@ -204,6 +209,9 @@ p
 /* begins the portolio page */
 .btns {
   list-style-type: none;
+  margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
 }
 .btn {
   font-family: Roboto;
@@ -222,6 +230,9 @@ p
 }
 .projects-list {
   list-style-type: none;
+   margin-top:0;
+  margin-bottom:0;
+  padding-left:0;
 }
 .projects-link {
   text-decoration: none;

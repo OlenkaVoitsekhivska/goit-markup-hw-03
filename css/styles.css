@@ -1,9 +1,9 @@
-html{
+html {
   box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
@@ -23,26 +23,32 @@ body {
   font-family: Roboto;
   font-style: normal;
   letter-spacing: 0.03em;
-  margin:0;
-
+  margin: 0;
 }
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
-  
+  padding-right: 15px;
+  padding-left: 15px;
 }
 h1,
 h2,
 h3,
-p
-{
+p {
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 0;
+  margin-left: 0;
 }
-
-.nav-bar{
+img,
+a {
+  display: block;
+}
+.nav-bar {
   outline: 1px solid tomato;
- 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .logo-header {
   text-decoration: none;
@@ -51,6 +57,7 @@ p
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 92px;
 }
 .logo-footer {
   text-decoration: none;
@@ -66,17 +73,27 @@ p
 
 .nav-list {
   list-style-type: none;
-  margin-top:0;
-  padding-left:0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
 }
+.nav-list li + li {
+  margin-left: 40px;
+}
+
 .nav-item {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--headings);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .nav-item:hover,
 .nav-item:focus {
   color: var(--blue);
@@ -87,9 +104,12 @@ p
 .contacts-list {
   list-style-type: none;
   margin-bottom: 0;
-  margin-top:0;
-  padding-left:0;
+  margin-top: 0;
+  padding-left: 0;
+  display: flex;
+  margin-left: auto;
 }
+
 .contacts-item {
   font-weight: 500;
   font-size: 14px;
@@ -98,15 +118,21 @@ p
   color: var(--paragraph-contact);
   text-decoration: none;
 }
+.contacts-list li + li {
+  margin-left: 50px;
+}
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--blue);
 }
 .hero-box {
+  display: block;
   background-color: var(--hero-footer-bcg);
-  outline:tomato solid 1px;
+  outline: tomato solid 1px;
 }
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -116,6 +142,10 @@ p
   color: var(--hero-heading);
 }
 .button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 200px;
   font-family: Roboto;
   background-color: var(--blue);
   font-weight: 700;
@@ -125,12 +155,20 @@ p
   letter-spacing: 0.06em;
   color: var(--white);
 }
-.features{
+.features {
   outline: tomato solid 1px;
+  margin-top: 94px;
+}
+.features-list li {
+  width: 270px;
 }
 .features-list {
   list-style-type: none;
-  margin-bottom: 0;
+  margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
 }
 .features-title {
   font-weight: 700;
@@ -141,6 +179,7 @@ p
   color: var(--headings);
 }
 .features-description {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -153,25 +192,37 @@ p
   text-align: center;
   color: var(--headings);
 }
-.services{
+.services {
   outline: tomato solid 1px;
-  }
+  margin-top: 94px;
+}
 
 .services-list {
   list-style-type: none;
-  margin-top:0;
-  margin-bottom:0;
-  padding-left:0;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .crew {
+  margin-top: 94px;
   background-color: var(--crew-bcg);
   outline: tomato solid 1px;
 }
+.crew-title {
+  padding-top: 94px;
+}
 .crew-list {
   list-style-type: none;
-    margin-top:0;
-  margin-bottom:0;
-  padding-left:0;
+  margin-top: 30px;
+  margin-bottom: 94px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .crew-name {
   font-weight: 500;
@@ -187,8 +238,17 @@ p
 }
 .footer {
   background-color: var(--hero-footer-bcg);
+  outline: tomato solid 1px;
+  display: flex;
+  justify-content: start;
 }
-
+.logo-footer {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.footer-address {
+  padding-bottom: 60px;
+}
 .physical-address {
   font-style: normal;
   font-weight: 400;
@@ -209,10 +269,13 @@ p
 /* begins the portolio page */
 .btns {
   list-style-type: none;
-  margin-top:0;
-  margin-bottom:0;
-  padding-left:0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
 }
+
 .btn {
   font-family: Roboto;
   font-weight: 500;
@@ -230,9 +293,12 @@ p
 }
 .projects-list {
   list-style-type: none;
-   margin-top:0;
-  margin-bottom:0;
-  padding-left:0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .projects-link {
   text-decoration: none;

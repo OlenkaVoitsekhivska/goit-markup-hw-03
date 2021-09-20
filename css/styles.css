@@ -127,12 +127,17 @@ a {
 }
 .hero-box {
   display: block;
+  height: 600px;
+
   background-color: var(--hero-footer-bcg);
   outline: tomato solid 1px;
 }
 .hero-title {
+  width: 696px;
   padding-top: 200px;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -145,6 +150,9 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
   min-width: 200px;
   font-family: Roboto;
   background-color: var(--blue);
@@ -229,12 +237,17 @@ a {
   font-size: 16px;
   line-height: 1.19;
   color: var(--headings);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .crew-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--paragraph-contact);
+  text-align: center;
+  margin-bottom: 30px;
 }
 .footer {
   background-color: var(--hero-footer-bcg);
@@ -269,13 +282,16 @@ a {
 /* begins the portolio page */
 .btns {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 94px;
+  margin-bottom: 34px;
   padding-left: 0;
   display: flex;
   justify-content: center;
+  outline: tomato solid 1px;
 }
-
+.btns li + li {
+  margin-left: 8px;
+}
 .btn {
   font-family: Roboto;
   font-weight: 500;
@@ -294,11 +310,24 @@ a {
 .projects-list {
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 0;
+
+  margin-bottom: 94px;
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  outline: tomato solid 1px;
+}
+
+.projects-list li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-list > li:nth-child(3n) {
+  margin-right: 0;
+}
+.projects-list > li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .projects-link {
   text-decoration: none;

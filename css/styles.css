@@ -45,8 +45,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-header {
@@ -108,8 +107,8 @@ a {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
   margin-left: auto;
+  padding-left: 0;
 
   list-style-type: none;
 }
@@ -136,11 +135,12 @@ a {
   display: block;
   height: 600px;
   background-color: var(--hero-footer-bcg);
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .hero-title {
   width: 696px;
-  padding-top: 200px;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -209,6 +209,7 @@ a {
   color: var(--headings);
 }
 .services {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -223,12 +224,9 @@ a {
 }
 
 .crew {
-  margin-bottom: 0;
   background-color: var(--crew-bcg);
-}
-
-.crew-title {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .crew-list {
@@ -239,7 +237,6 @@ a {
   list-style-type: none;
   margin-top: 50px;
   margin-bottom: 0;
-  padding-bottom: 94px;
   padding-left: 0;
 }
 
@@ -277,15 +274,12 @@ a {
   display: flex;
   justify-content: start;
   background-color: var(--hero-footer-bcg);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
   margin-bottom: 20px;
-  padding-top: 60px;
-}
-
-.footer-address {
-  margin-bottom: 60px;
 }
 
 .physical-address {
@@ -315,11 +309,10 @@ a {
 .btns {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 50px;
   list-style-type: none;
 }
 
@@ -327,6 +320,10 @@ a {
   margin-left: 8px;
 }
 
+.projects-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .btn {
   padding: 6px 22px;
   font-family: Roboto;
@@ -351,7 +348,6 @@ a {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 94px;
   padding-left: 0;
   list-style-type: none;
 }

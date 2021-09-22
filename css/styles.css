@@ -41,11 +41,13 @@ img,
 a {
   display: block;
 }
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border-bottom: 1px solid #ececec;
 }
 
 .logo-header {
@@ -133,10 +135,9 @@ a {
 
 .hero-box {
   display: block;
-  height: 600px;
   background-color: var(--hero-footer-bcg);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -209,7 +210,6 @@ a {
   color: var(--headings);
 }
 .services {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -245,6 +245,7 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .crew-list li + li {
@@ -252,7 +253,6 @@ a {
 }
 
 .crew-name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -263,11 +263,15 @@ a {
 
 .crew-position {
   text-align: center;
-  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--paragraph-contact);
+}
+.crew-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer {
